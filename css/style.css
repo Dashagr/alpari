@@ -1,7 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
@@ -46,7 +43,7 @@ h1 {
  */
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -84,7 +81,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -232,7 +229,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -267,7 +264,7 @@ textarea {
 [type=checkbox],
 [type=radio] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -344,7 +341,7 @@ template {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -353,6 +350,7 @@ body {
   font-weight: 300;
   line-height: 1.75;
 }
+
 body.lock {
   overflow: hidden;
 }
@@ -381,28 +379,31 @@ section:not(:nth-child(2)) {
   z-index: 999;
   width: 100%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #333;
   color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   overflow: auto;
 }
+
 .navbar .brand-title {
   font-size: 1.5rem;
   margin: 0.5rem;
 }
+
 .navbar .navbar-links {
   height: 100%;
   width: 100%;
   padding-bottom: 30px;
 }
+
 .navbar .navbar-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,14 +413,16 @@ section:not(:nth-child(2)) {
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-transform: uppercase;
 }
+
 .navbar .navbar-links ul li {
   text-align: center;
   list-style: none;
 }
+
 .navbar .navbar-links ul li a {
   padding: 0.6rem 1rem;
   display: block;
@@ -427,9 +430,11 @@ section:not(:nth-child(2)) {
   color: white;
   font-size: 1.4em;
 }
+
 .navbar .navbar-links ul li:hover {
   background-color: #555;
 }
+
 .navbar .toggle-button {
   position: absolute;
   top: 0.75rem;
@@ -439,14 +444,15 @@ section:not(:nth-child(2)) {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 30px;
   height: 21px;
 }
+
 .navbar .toggle-button .bar {
   height: 3px;
   width: 100%;
@@ -456,24 +462,28 @@ section:not(:nth-child(2)) {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 .navbar .toggle-button.active {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
 .navbar .toggle-button.active .bar:nth-child(1) {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 0.75rem;
 }
+
 .navbar .toggle-button.active .bar:nth-child(2) {
   display: none;
 }
+
 .navbar .toggle-button.active .bar:nth-child(3) {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
   bottom: 0.75rem;
 }
 
@@ -484,11 +494,13 @@ section:not(:nth-child(2)) {
   cursor: default;
   padding: 5em 4em;
 }
+
 #banner p:nth-child(2) {
   color: rgba(255, 255, 255, 0.75);
   letter-spacing: 0.2em;
   margin: 0 0 1em 0;
 }
+
 #banner p:nth-child(3) {
   text-transform: uppercase;
   margin: 0 0 4em 0;
@@ -503,21 +515,23 @@ section:not(:nth-child(2)) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 100%;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-top: 2em;
   height: 30px;
 }
+
 .tag-cloud a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.75);
   text-shadow: -0.5px 1px 2px #616164;
   -webkit-animation: tag 3s ease-in-out infinite alternate;
-          animation: tag 3s ease-in-out infinite alternate;
+  animation: tag 3s ease-in-out infinite alternate;
 }
+
 .tag-cloud a:before {
   content: "#";
 }
@@ -526,6 +540,7 @@ section:not(:nth-child(2)) {
   from {
     color: rgba(255, 255, 255, 0.75);
   }
+
   to {
     color: white;
     font-size: 1.2em;
@@ -536,36 +551,40 @@ section:not(:nth-child(2)) {
   from {
     color: rgba(255, 255, 255, 0.75);
   }
+
   to {
     color: white;
     font-size: 1.2em;
   }
 }
+
 #data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
+
 #data .image {
   width: 50%;
-  background: url("../img/Trading_Platform_EN_EURO.png") center;
+  background: url("../img/Trading_Platform_EN_EURO.jpg") center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
+
 #data .content {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
   width: 50%;
   display: block;
   background: white;
@@ -573,39 +592,44 @@ section:not(:nth-child(2)) {
   text-align: right;
   position: relative;
 }
+
 #data .content .inner h2 {
   color: #1abc9c;
 }
+
 #data .content .inner p.info {
   border-top: 1px solid rgba(144, 144, 144, 0.25);
   border-bottom: 1px solid rgba(144, 144, 144, 0.25);
   font-style: italic;
   padding: 0.5em 0;
 }
+
 #data .content .inner p.info q {
   color: #aaa9a9;
 }
+
 #data .content .inner .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   text-align: right;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-top: 3em;
 }
+
 #data .content .inner .actions a {
   background-color: transparent;
   color: #1abc9c;
   text-decoration: none;
   padding: 1em 2.5em;
   -webkit-box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-          box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
+  box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -615,12 +639,15 @@ section:not(:nth-child(2)) {
   text-align: center;
   white-space: nowrap;
 }
+
 #data .content .inner .actions a:nth-child(2) {
   margin-left: 40px;
 }
+
 #data .content .inner .actions a:active {
   background-color: rgba(144, 144, 144, 0.2);
 }
+
 #data .content .inner .actions a:hover {
   background-color: rgba(144, 144, 144, 0.075);
 }
@@ -631,25 +658,27 @@ section:not(:nth-child(2)) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
+
 #technologies .image {
   width: 50%;
   background: url("../img/Trading.jpg") center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
+
 #technologies .content {
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
   width: 50%;
   display: block;
   background: #1abc9c;
@@ -657,39 +686,44 @@ section:not(:nth-child(2)) {
   text-align: left;
   position: relative;
 }
+
 #technologies .content .inner h2 {
   color: white;
 }
+
 #technologies .content .inner p.info {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   font-style: italic;
   padding: 0.5em 0;
 }
+
 #technologies .content .inner p.info q {
   color: rgba(255, 255, 255, 0.7);
 }
+
 #technologies .content .inner .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   text-align: left;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-top: 3em;
 }
+
 #technologies .content .inner .actions a {
   background-color: transparent;
   color: white;
   text-decoration: none;
   padding: 1em 2.5em;
   -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
-          box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -699,12 +733,15 @@ section:not(:nth-child(2)) {
   text-align: center;
   white-space: nowrap;
 }
+
 #technologies .content .inner .actions a:nth-child(2) {
   margin-left: 40px;
 }
+
 #technologies .content .inner .actions a:active {
   background-color: rgba(255, 255, 255, 0.35);
 }
+
 #technologies .content .inner .actions a:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
@@ -715,25 +752,27 @@ section:not(:nth-child(2)) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
+
 #environment .image {
   width: 50%;
   background: url("../img/FRclub03.jpg") center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
+
 #environment .content {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
   width: 50%;
   display: block;
   background: white;
@@ -741,39 +780,44 @@ section:not(:nth-child(2)) {
   text-align: right;
   position: relative;
 }
+
 #environment .content .inner h2 {
   color: #3498db;
 }
+
 #environment .content .inner p.info {
   border-top: 1px solid rgba(144, 144, 144, 0.25);
   border-bottom: 1px solid rgba(144, 144, 144, 0.25);
   font-style: italic;
   padding: 0.5em 0;
 }
+
 #environment .content .inner p.info q {
   color: #aaa9a9;
 }
+
 #environment .content .inner .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   text-align: right;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-top: 3em;
 }
+
 #environment .content .inner .actions a {
   background-color: transparent;
   color: #3498db;
   text-decoration: none;
   padding: 1em 2.5em;
   -webkit-box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-          box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
+  box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -783,12 +827,15 @@ section:not(:nth-child(2)) {
   text-align: center;
   white-space: nowrap;
 }
+
 #environment .content .inner .actions a:nth-child(2) {
   margin-left: 40px;
 }
+
 #environment .content .inner .actions a:active {
   background-color: rgba(144, 144, 144, 0.2);
 }
+
 #environment .content .inner .actions a:hover {
   background-color: rgba(144, 144, 144, 0.075);
 }
@@ -799,25 +846,27 @@ section:not(:nth-child(2)) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
+
 #training .image {
   width: 50%;
   background: url("../img/b042a3.jpg") center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
+
 #training .content {
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
   width: 50%;
   display: block;
   background: #3498db;
@@ -825,39 +874,44 @@ section:not(:nth-child(2)) {
   text-align: left;
   position: relative;
 }
+
 #training .content .inner h2 {
   color: white;
 }
+
 #training .content .inner p.info {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   font-style: italic;
   padding: 0.5em 0;
 }
+
 #training .content .inner p.info q {
   color: rgba(255, 255, 255, 0.7);
 }
+
 #training .content .inner .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   text-align: left;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-top: 3em;
 }
+
 #training .content .inner .actions a {
   background-color: transparent;
   color: white;
   text-decoration: none;
   padding: 1em 2.5em;
   -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
-          box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -867,12 +921,15 @@ section:not(:nth-child(2)) {
   text-align: center;
   white-space: nowrap;
 }
+
 #training .content .inner .actions a:nth-child(2) {
   margin-left: 40px;
 }
+
 #training .content .inner .actions a:active {
   background-color: rgba(255, 255, 255, 0.35);
 }
+
 #training .content .inner .actions a:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
@@ -883,25 +940,27 @@ section:not(:nth-child(2)) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
+
 #maintenance .image {
   width: 50%;
   background: url("../img/vip.jpg") center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
+
 #maintenance .content {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
   width: 50%;
   display: block;
   background: white;
@@ -909,39 +968,44 @@ section:not(:nth-child(2)) {
   text-align: right;
   position: relative;
 }
+
 #maintenance .content .inner h2 {
   color: #9b59b6;
 }
+
 #maintenance .content .inner p.info {
   border-top: 1px solid rgba(144, 144, 144, 0.25);
   border-bottom: 1px solid rgba(144, 144, 144, 0.25);
   font-style: italic;
   padding: 0.5em 0;
 }
+
 #maintenance .content .inner p.info q {
   color: #aaa9a9;
 }
+
 #maintenance .content .inner .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   text-align: right;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-top: 3em;
 }
+
 #maintenance .content .inner .actions a {
   background-color: transparent;
   color: #9b59b6;
   text-decoration: none;
   padding: 1em 2.5em;
   -webkit-box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-          box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
+  box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -951,12 +1015,15 @@ section:not(:nth-child(2)) {
   text-align: center;
   white-space: nowrap;
 }
+
 #maintenance .content .inner .actions a:nth-child(2) {
   margin-left: 40px;
 }
+
 #maintenance .content .inner .actions a:active {
   background-color: rgba(144, 144, 144, 0.2);
 }
+
 #maintenance .content .inner .actions a:hover {
   background-color: rgba(144, 144, 144, 0.075);
 }
@@ -967,25 +1034,27 @@ section:not(:nth-child(2)) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
+
 #news .image {
   width: 50%;
-  background: url("../img/news.png") center;
+  background: url("../img/news.jpg") center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
+
 #news .content {
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
   width: 50%;
   display: block;
   background: #9b59b6;
@@ -993,39 +1062,44 @@ section:not(:nth-child(2)) {
   text-align: left;
   position: relative;
 }
+
 #news .content .inner h2 {
   color: white;
 }
+
 #news .content .inner p.info {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   font-style: italic;
   padding: 0.5em 0;
 }
+
 #news .content .inner p.info q {
   color: rgba(255, 255, 255, 0.7);
 }
+
 #news .content .inner .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   text-align: left;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-top: 3em;
 }
+
 #news .content .inner .actions a {
   background-color: transparent;
   color: white;
   text-decoration: none;
   padding: 1em 2.5em;
   -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
-          box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -1035,12 +1109,15 @@ section:not(:nth-child(2)) {
   text-align: center;
   white-space: nowrap;
 }
+
 #news .content .inner .actions a:nth-child(2) {
   margin-left: 40px;
 }
+
 #news .content .inner .actions a:active {
   background-color: rgba(255, 255, 255, 0.35);
 }
+
 #news .content .inner .actions a:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
@@ -1051,25 +1128,27 @@ section:not(:nth-child(2)) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
+
 #community .image {
   width: 50%;
   background: url("../img/frankfurt-stock-exchange.jpg") center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
+
 #community .content {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
   width: 50%;
   display: block;
   background: white;
@@ -1077,39 +1156,44 @@ section:not(:nth-child(2)) {
   text-align: right;
   position: relative;
 }
+
 #community .content .inner h2 {
   color: #54567c;
 }
+
 #community .content .inner p.info {
   border-top: 1px solid rgba(144, 144, 144, 0.25);
   border-bottom: 1px solid rgba(144, 144, 144, 0.25);
   font-style: italic;
   padding: 0.5em 0;
 }
+
 #community .content .inner p.info q {
   color: #aaa9a9;
 }
+
 #community .content .inner .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   text-align: right;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-top: 3em;
 }
+
 #community .content .inner .actions a {
   background-color: transparent;
   color: #54567c;
   text-decoration: none;
   padding: 1em 2.5em;
   -webkit-box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-          box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
+  box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -1119,12 +1203,15 @@ section:not(:nth-child(2)) {
   text-align: center;
   white-space: nowrap;
 }
+
 #community .content .inner .actions a:nth-child(2) {
   margin-left: 40px;
 }
+
 #community .content .inner .actions a:active {
   background-color: rgba(144, 144, 144, 0.2);
 }
+
 #community .content .inner .actions a:hover {
   background-color: rgba(144, 144, 144, 0.075);
 }
@@ -1135,17 +1222,19 @@ section:not(:nth-child(2)) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
 .socials a i {
   color: rgba(255, 255, 255, 0.7);
   margin: 1em;
   font-size: 2.3em;
 }
+
 .socials a i:hover {
   color: white;
 }
@@ -1155,17 +1244,19 @@ section:not(:nth-child(2)) {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   padding: 10px 0;
   background: #333;
   color: white;
   cursor: pointer;
 }
+
 .top i {
   font-variant: all-small-caps;
 }
+
 .top:hover {
   opacity: 0.85;
 }
@@ -1179,29 +1270,32 @@ section:not(:nth-child(2)) {
   font-weight: 400;
   display: none;
 }
+
 .overlay .popup {
   position: absolute;
   width: 400px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: white;
   -webkit-box-shadow: -0.5px 1px 2px #616164;
-          box-shadow: -0.5px 1px 2px #616164;
+  box-shadow: -0.5px 1px 2px #616164;
   text-align: center;
   padding: 3em 3em 3em 3em;
 }
+
 .overlay .popup form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
+
 .overlay .popup form input {
   margin-bottom: 30px;
   padding: 10px 15px;
@@ -1211,25 +1305,33 @@ section:not(:nth-child(2)) {
   -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-.overlay .popup form input:focus, .overlay .popup form input:hover {
+
+.overlay .popup form input:focus,
+.overlay .popup form input:hover {
   outline: none;
   background-color: #eee;
 }
+
 .overlay .popup form input:focus::-webkit-input-placeholder {
   opacity: 0.5;
 }
+
 .overlay .popup form input:focus::-moz-placeholder {
   opacity: 0.5;
 }
+
 .overlay .popup form input:focus:-ms-input-placeholder {
   opacity: 0.5;
 }
+
 .overlay .popup form input:focus::-ms-input-placeholder {
   opacity: 0.5;
 }
+
 .overlay .popup form input:focus::placeholder {
   opacity: 0.5;
 }
+
 .overlay .popup form button {
   border: none;
   outline: none;
@@ -1239,13 +1341,17 @@ section:not(:nth-child(2)) {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   cursor: pointer;
 }
-.overlay .popup form button:focus, .overlay .popup form button:hover {
+
+.overlay .popup form button:focus,
+.overlay .popup form button:hover {
   outline: none;
   background-color: rgba(144, 144, 144, 0.25);
 }
+
 .overlay .popup form button:active {
   opacity: 0.5;
 }
+
 .overlay .close {
   position: absolute;
   top: 15px;
@@ -1254,6 +1360,7 @@ section:not(:nth-child(2)) {
   height: 23px;
   cursor: pointer;
 }
+
 .overlay .close:before {
   content: "";
   background-color: rgba(144, 144, 144, 0.25);
@@ -1263,9 +1370,10 @@ section:not(:nth-child(2)) {
   top: 11px;
   left: -4px;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
+
 .overlay .close:after {
   content: "";
   background-color: rgba(144, 144, 144, 0.25);
@@ -1275,6 +1383,6 @@ section:not(:nth-child(2)) {
   top: 11px;
   left: -4px;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

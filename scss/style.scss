@@ -197,7 +197,7 @@ section:not(:nth-child(2)) {
 }
 
 #data {
-    @include theme (1, $data-bg, $data-color, url('../img/Trading_Platform_EN_EURO.png') center, cover);
+    @include theme (1, $data-bg, $data-color, url('../img/Trading_Platform_EN_EURO.jpg') center, cover);
 }
 
 
@@ -220,7 +220,7 @@ section:not(:nth-child(2)) {
 
 
 #news {
-    @include theme (2, $news-color, $light-color, url('../img/news.png') center, cover);
+    @include theme (2, $news-color, $light-color, url('../img/news.jpg') center, cover);
 }
 
 
