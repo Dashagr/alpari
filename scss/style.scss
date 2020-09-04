@@ -220,7 +220,7 @@ section:not(:nth-child(2)) {
 
 
 #news {
-    @include theme (2, $news-color, $light-color, url('../img/news.jpg') center, cover);
+    @include theme (2, $news-color, $light-color, url('../img/news.png') center, cover);
 }
 
 
