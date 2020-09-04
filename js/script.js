@@ -52,8 +52,9 @@ $(document).mouseup(function (e) {
     }
 });
 
-$('button').click(function () {
+$('button').click(function (e) {
     $('.overlay').fadeOut();
     $('section').css('filter', 'none');
+    e.preventDefault();
     alert('Спасибо!');
 })
