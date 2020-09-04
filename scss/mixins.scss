@@ -1,0 +1,96 @@
+@mixin theme($order, $bg, $main-color, $image-url, $bg-size) {
+    @if $order==1 {
+
+        @include article (1, 2, right, flex-end, $info-border-dark, $q-dark, $btn-active-dark, $btn-hover-dark, $bg, $main-color, $image-url, $bg-size);
+    }
+
+    @else {
+        @include article (2, 1, left, flex-start, $info-border-light, $q-light, $btn-active-light, $btn-hover-light, $bg, $main-color, $image-url, $bg-size);
+    }
+}
+
+@mixin article ($a-order-text, $a-order-img, $a-text-align, $a-button-oriented, $info-border, $q, $btn-active, $btn-hover, $a-bg, $a-main-color, $a-image-url, $a-bg-size) {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    .image {
+        width: 50%;
+        background: $a-image-url;
+        background-size: $a-bg-size;
+        background-repeat: no-repeat;
+        order: $a-order-img;
+    }
+
+    .content {
+        order: $a-order-text;
+        width: 50%;
+        display: block;
+        background: $a-bg;
+        padding: 2.5em 4em;
+        text-align: $a-text-align;
+        position: relative;
+
+        .inner {
+            h2 {
+                color: $a-main-color;
+            }
+
+            p.info {
+                border-top: 1px solid $info-border;
+                border-bottom: 1px solid $info-border;
+                font-style: italic;
+                padding: .5em 0;
+
+                q {
+                    color: $q;
+                }
+            }
+
+            .actions {
+                display: flex;
+                flex-direction: row;
+                text-align: $a-text-align;
+                justify-content: $a-button-oriented;
+                margin-top: 3em;
+
+                a {
+                    background-color: transparent;
+                    color: $a-main-color;
+                    text-decoration: none;
+                    padding: 1em 2.5em;
+                    box-shadow: inset 0 0 0 2px $info-border;
+                    transition: $bg-transition;
+                    cursor: pointer;
+                    font-size: 1.15em;
+                    font-weight: 600;
+                    text-align: center;
+                    white-space: nowrap;
+
+                    &:nth-child(2) {
+                        margin-left: 40px;
+                    }
+
+                    &:active {
+                        background-color: $btn-active;
+                    }
+
+                    &:hover {
+                        background-color: $btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin cross ($deg) {
+    content: '';
+    background-color: $info-border-dark;
+    position: absolute;
+    height: 1.5px;
+    width: 25px;
+    top: 11px;
+    left: -4px;
+    transform: rotate($deg);
+}
