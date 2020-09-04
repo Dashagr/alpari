@@ -1,23 +1,23 @@
-@mixin theme($order, $bg, $main-color, $image-url, $bg-size) {
+@mixin theme($order, $bg, $main-color, $image-url) {
     @if $order==1 {
 
-        @include article (1, 2, right, flex-end, $info-border-dark, $q-dark, $btn-active-dark, $btn-hover-dark, $bg, $main-color, $image-url, $bg-size);
+        @include article (1, 2, right, flex-end, $info-border-dark, $q-dark, $btn-active-dark, $btn-hover-dark, $bg, $main-color, $image-url);
     }
 
     @else {
-        @include article (2, 1, left, flex-start, $info-border-light, $q-light, $btn-active-light, $btn-hover-light, $bg, $main-color, $image-url, $bg-size);
+        @include article (2, 1, left, flex-start, $info-border-light, $q-light, $btn-active-light, $btn-hover-light, $bg, $main-color, $image-url);
     }
 }
 
-@mixin article ($a-order-text, $a-order-img, $a-text-align, $a-button-oriented, $info-border, $q, $btn-active, $btn-hover, $a-bg, $a-main-color, $a-image-url, $a-bg-size) {
+@mixin article ($a-order-text, $a-order-img, $a-text-align, $a-button-oriented, $info-border, $q, $btn-active, $btn-hover, $a-bg, $a-main-color, $a-image-url) {
     display: flex;
     flex-direction: row;
     align-items: stretch;
 
     .image {
         width: 50%;
-        background: $a-image-url;
-        background-size: $a-bg-size;
+        background: $a-image-url center;
+        background-size: cover;
         background-repeat: no-repeat;
         order: $a-order-img;
     }
@@ -50,6 +50,7 @@
             .actions {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 text-align: $a-text-align;
                 justify-content: $a-button-oriented;
                 margin-top: 3em;
@@ -80,6 +81,40 @@
                     }
                 }
             }
+        }
+    }
+
+    @media screen and(max-width: 900px) {
+
+        .image {
+            width: 100%;
+            height: 250px;
+            order: 1;
+        }
+
+        .content {
+            width: 100%;
+            order: 2;
+            text-align: left;
+
+            .inner {
+                .actions {
+                    text-align: left;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    a {
+                        padding-right: 0;
+                        padding-left: 0;
+                        width: 100%;
+
+                        &:nth-child(2) {
+                            margin: 25px 0 0 0;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

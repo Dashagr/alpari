@@ -38,6 +38,7 @@ section:not(:nth-child(2)) {
     position: fixed;
     z-index: 999;
     width: 100%;
+    max-width: 100vw;
     justify-content: space-between;
     background-color: $nav-bg;
     color: white;
@@ -156,12 +157,14 @@ section:not(:nth-child(2)) {
     justify-content: space-around;
     margin-top: 2em;
     height: 30px;
+    flex-wrap: wrap;
 
     a {
         text-decoration: none;
         color: $banner-tag;
         text-shadow: $shadow;
-        animation: tag 3s ease-in-out infinite alternate;
+        animation: tag .7s ease-in-out infinite alternate;
+        margin: 15px;
 
         &:before {
             content: "#";
@@ -176,40 +179,39 @@ section:not(:nth-child(2)) {
 
     to {
         color: white;
-        font-size: 1.2em;
     }
 }
 
 #data {
-    @include theme (1, $data-bg, $data-color, url('../img/Trading_Platform_EN_EURO.jpg') center, cover);
+    @include theme (1, $data-bg, $data-color, url('../img/Trading_Platform_EN_EURO.jpg'));
 }
 
 
 #technologies {
-    @include theme (2, $data-color, $light-color, url('../img/Trading.jpg') center, cover);
+    @include theme (2, $data-color, $light-color, url('../img/Trading.jpg'));
 }
 
 #environment {
-    @include theme (1, $light-color, $training-color, url('../img/FRclub03.jpg') center, cover);
+    @include theme (1, $light-color, $training-color, url('../img/FRclub03.jpg'));
 }
 
 #training {
-    @include theme (2, $training-color, $light-color, url('../img/b042a3.jpg') center, cover);
+    @include theme (2, $training-color, $light-color, url('../img/b042a3.jpg'));
 }
 
 
 #maintenance {
-    @include theme (1, $light-color, $news-color, url('../img/vip.jpg') center, cover);
+    @include theme (1, $light-color, $news-color, url('../img/vip.jpg'));
 }
 
 
 #news {
-    @include theme (2, $news-color, $light-color, url('../img/news.jpg') center, cover);
+    @include theme (2, $news-color, $light-color, url('../img/news.jpg'));
 }
 
 
 #community {
-    @include theme (1, $light-color, $community-color, url('../img/frankfurt-stock-exchange.jpg') center, cover);
+    @include theme (1, $light-color, $community-color, url('../img/frankfurt-stock-exchange.jpg'));
 }
 
 
@@ -250,12 +252,13 @@ section:not(:nth-child(2)) {
 .overlay {
     position: fixed;
     width: 100%;
+    max-width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     font-weight: 400;
     display: none;
-    
+
     .popup {
         position: absolute;
         width: 400px;
@@ -325,4 +328,65 @@ section:not(:nth-child(2)) {
             @include cross(45deg);
         }
     }
+}
+
+@media screen and(max-width: 900px) {
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .navbar {
+        padding: 10px;
+
+        .toggle-button {
+            top: 1.75rem;
+        }
+    }
+
+    #banner {
+        p {
+            &:nth-child(2) {
+                letter-spacing: 0em;
+                margin-top: -10px;
+            }
+
+            &:nth-child(3) {
+                font-size: 1.2em;
+                text-transform: none;
+                margin: 3em 0;
+            }
+        }
+    }
+
+    ul.tag-cloud {
+        padding-left: 0;
+        height: 100px;
+
+        a {
+            width: 50%;
+        }
+    }
+
+    #data,
+    #technologies,
+    #environment,
+    #training,
+    #maintenance,
+    #news,
+    #community {
+        flex-direction: column;
+    }
+
+    // .socials{
+    //     flex-direction: column;
+    //     a{
+    //      width: 100%;   
+    //     }
+    // }
+
+    .top i {
+        font-size: 35px;
+    }
+
 }
