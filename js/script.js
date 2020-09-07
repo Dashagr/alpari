@@ -6,13 +6,25 @@ $(".toggle-button").on("click", function () {
     $(".navbar-links").slideToggle(500);
 });
 
-//easy scroll content
+//easy scroll content from menu
 
-var headerHeight = $(".navbar").outerHeight();
+let headerHeight = $(".navbar").outerHeight();
 $(".scroll").click(function (e) {
-    var linkHref = $(this).attr("href");
+    let linkHref = $(this).attr("href");
     $('.navbar-links, .navbar-links').hide();
     $(".toggle-button").toggleClass(' active');
+    $("html, body").animate({
+            scrollTop: $(linkHref).offset().top - headerHeight,
+        },
+        1000
+    );
+    e.preventDefault();
+});
+
+//easy scroll content from menu
+
+$(".scroll-link").click(function (e) {
+    let linkHref = $(this).attr("href");
     $("html, body").animate({
             scrollTop: $(linkHref).offset().top - headerHeight,
         },
@@ -45,7 +57,7 @@ $('.close').click(function () {
 })
 
 $(document).mouseup(function (e) {
-    var popup = $('.popup');
+    let popup = $('.popup');
     if (e.target != popup[0] && popup.has(e.target).length === 0) {
         $('.overlay').fadeOut();
         $('section').css('filter', 'none');
